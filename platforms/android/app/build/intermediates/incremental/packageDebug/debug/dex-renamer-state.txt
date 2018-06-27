@@ -1,0 +1,4 @@
+#Wed Jun 27 15:05:11 IST 2018
+base.0=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
+renamed.0=classes.dex
+file.0=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex

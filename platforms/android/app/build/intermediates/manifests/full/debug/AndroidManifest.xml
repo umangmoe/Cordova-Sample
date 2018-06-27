@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.moengage.cordova.sample"
+    android:hardwareAccelerated="true"
+    android:versionCode="10000"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="26" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.moengage.cordova.sample.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.moengage.cordova.sample.permission.C2D_MESSAGE" />
+
+    <application
+        android:name="com.moengage.cordova.sample.SampleApplication"
+        android:debuggable="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true" >
+        <activity
+            android:name="com.moengage.cordova.sample.MainActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:label="@string/activity_name"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter android:label="@string/launcher_name" >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.moe.pushlibrary.providers.MoEProvider"
+            android:authorities="com.moengage.cordova.sample.moengage.provider"
+            android:exported="false" />
+
+        <receiver android:name="com.moe.pushlibrary.AppUpdateReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <data
+                    android:path="com.moengage.cordova.sample"
+                    android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_MY_PACKAGE_REPLACED" />
+
+                <data
+                    android:path="com.moengage.cordova.sample"
+                    android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.moengage.firebase.MoEngaeFireBaseMessagingService" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.moengage.firebase.MoEngageFireBaseInstanceIdService" >
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!--
+             FirebaseMessagingService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service> <!-- MANDATORY WORKER WHICH DOES PIECES OF THE HEAVY LIFTING -->
+        <service
+            android:name="com.moe.pushlibrary.MoEWorker"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.moengage.core.MoEAlarmReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity android:name="com.moengage.core.integrationVerification.IntegrationVerificationActivity" >
+            <meta-data
+                android:name="showInApp"
+                android:value="false" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="integration"
+                    android:scheme="moengage" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.moengage.core.DataSyncJob"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+        </service>
+        <service
+            android:name="com.moengage.core.ScheduledDataSyncJob"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+        </service>
+
+        <activity
+            android:name="com.moengage.pushbase.activities.PushTracker"
+            android:configChanges="orientation|screenSize"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+            <meta-data
+                android:name="showInApp"
+                android:value="false" />
+        </activity>
+        <activity
+            android:name="com.moengage.pushbase.activities.SnoozeTracker"
+            android:configChanges="orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:taskAffinity=":NotificationDialog"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+            <meta-data
+                android:name="showInApp"
+                android:value="false" />
+        </activity>
+
+        <service
+            android:name="com.moengage.pushbase.push.MoEPushWorker"
+            android:exported="false" /> <!-- Required for GEO FENCING -->
+        <service
+            android:name="com.moengage.locationlibrary.GeofenceIntentService"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.moengage.addon.messaging.MoEMessageSyncReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+
+        <service
+            android:name="com.moengage.addon.messaging.MoEMessageSyncIntentService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+        <service
+            android:name="com.moengage.addon.messaging.MoEMessageSyncJob"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+        </service>
+        <service
+            android:name="com.moengage.addon.trigger.DTIntentService"
+            android:exported="false" >
+        </service>
+        <service
+            android:name="com.moengage.addon.trigger.DTSyncJob"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+        </service>
+
+        <receiver
+            android:name="com.moengage.addon.trigger.DTSyncAlarmReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.moengage.cordova.sample" />
+            </intent-filter>
+        </receiver>
+        <!--
+             FirebaseInstanceIdService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.moengage.cordova.sample.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.1.0" />
+        <meta-data
+            android:name="android.arch.lifecycle.VERSION"
+            android:value="27.0.0-SNAPSHOT" />
+    </application>
+
+</manifest>

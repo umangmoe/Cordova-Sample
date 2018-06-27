@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw720dp-land-v13/values-sw720dp-land-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/umang/.gradle/caches/transforms-1/files-1.1/moengagesdk-3.1.03.aar/29b866445f0d9d720aff25cdfa01aba2/res/values-sw720dp-land-v13/values-sw720dp-land-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "49",
+                        "endOffsets": "100"
+                    },
+                    "to": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "129",
+                        "endColumns": "49",
+                        "endOffsets": "174"
+                    }
+                },
+                {
+                    "source": "/Users/umang/.gradle/caches/transforms-1/files-1.1/inapp-3.1.00.aar/465b37cedbf7679b37cfa5b3a4e62cf9/res/values-sw720dp-land-v13/values-sw720dp-land-v13.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,91",
+                        "endColumns": "35,37",
+                        "endOffsets": "86,124"
+                    }
+                }
+            ]
+        }
+    ]
+}
