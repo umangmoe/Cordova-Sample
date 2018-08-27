@@ -52,20 +52,20 @@
         "source": "/Users/umang/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/f10480ae4eb8eb6862dac54c9771b672/res/layout/notification_template_media.xml"
     },
     {
-        "merged": "/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
-        "source": "/Users/umang/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/0e7c28603bd55d0b7a69a6fac6e4a2bc/res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png"
-    },
-    {
         "merged": "/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/merged/debug/layout-v16_notification_template_custom_big.xml.flat",
         "source": "/Users/umang/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/0e7c28603bd55d0b7a69a6fac6e4a2bc/res/layout-v16/notification_template_custom_big.xml"
     },
     {
-        "merged": "/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
-        "source": "/Users/umang/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/0e7c28603bd55d0b7a69a6fac6e4a2bc/res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png"
+        "merged": "/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "/Users/umang/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/0e7c28603bd55d0b7a69a6fac6e4a2bc/res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png"
     },
     {
         "merged": "/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/merged/debug/drawable_icon.png.flat",
         "source": "/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/src/main/res/drawable/icon.png"
+    },
+    {
+        "merged": "/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "/Users/umang/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/0e7c28603bd55d0b7a69a6fac6e4a2bc/res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png"
     },
     {
         "merged": "/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
@@ -80,12 +80,12 @@
         "source": "/Users/umang/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/0e7c28603bd55d0b7a69a6fac6e4a2bc/res/layout/notification_template_part_chronometer.xml"
     },
     {
-        "merged": "/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/merged/debug/color_common_google_signin_btn_tint.xml.flat",
-        "source": "/Users/umang/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/2fd40ad775dc3e144932a2bc3139c007/res/color/common_google_signin_btn_tint.xml"
-    },
-    {
         "merged": "/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_googleg_standard_color_18.png.flat",
         "source": "/Users/umang/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/2fd40ad775dc3e144932a2bc3139c007/res/drawable-hdpi-v4/googleg_standard_color_18.png"
+    },
+    {
+        "merged": "/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/merged/debug/color_common_google_signin_btn_tint.xml.flat",
+        "source": "/Users/umang/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/2fd40ad775dc3e144932a2bc3139c007/res/color/common_google_signin_btn_tint.xml"
     },
     {
         "merged": "/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
@@ -108,12 +108,12 @@
         "source": "/Users/umang/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/f10480ae4eb8eb6862dac54c9771b672/res/layout/notification_template_big_media_custom.xml"
     },
     {
-        "merged": "/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/merged/debug/anim_right_to_left_in.xml.flat",
-        "source": "/Users/umang/.gradle/caches/transforms-1/files-1.1/pushbase-3.1.00.aar/057c3f7eba9609cfb655d016d6cf5976/res/anim/right_to_left_in.xml"
-    },
-    {
         "merged": "/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/merged/debug/xml_config.xml.flat",
         "source": "/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/src/main/res/xml/config.xml"
+    },
+    {
+        "merged": "/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/merged/debug/anim_right_to_left_in.xml.flat",
+        "source": "/Users/umang/.gradle/caches/transforms-1/files-1.1/pushbase-3.1.00.aar/057c3f7eba9609cfb655d016d6cf5976/res/anim/right_to_left_in.xml"
     },
     {
         "merged": "/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/merged/debug/drawable-port-hdpi_screen.png.flat",

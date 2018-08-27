@@ -1,3 +1,9 @@
+Node version: v10.5.0
+
+Cordova version: 8.0.0
+
+Config.xml file: 
+
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.moengage.cordova.sample" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>moengage-demo</name>
@@ -19,16 +25,25 @@
     <platform name="android">
         <allow-intent href="market:*" />
         <resource-file src="google-services.json" target="app/google-services.json" />
-        <framework src="com.google.firebase:firebase-messaging:17.0.0" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-    <plugin name="cordova-plugin-moengage" spec="~4.0.0">
-        <variable name="APP_ID" value="VAMFYV9TB2DQK96O1F96OB1Q" />
+    <plugin name="cordova-plugin-moengage" spec="/Users/umang/Dev/cordova/MoECordova/core">
+        <variable name="APP_ID" value="as" />
     </plugin>
-    <plugin name="cordova-moengage-fcm-dependency" spec="^1.0.0" />
-    <plugin name="cordova-moengage-fcm-listeners" spec="^1.0.0" />
     <engine name="android" spec="^7.0.0" />
+    <plugin name="cordova-moengage-fcm-dependency" spec="/Users/umang/Dev/cordova/MoECordova/push-fcm-android-dependency" />
 </widget>
+
+
+Plugins: 
+
+cordova-moengage-fcm-dependency,cordova-plugin-moengage,cordova-plugin-whitelist
+
+Error retrieving Android platform information: 
+Android SDK is not set up properly. Make sure that the Android SDK 'tools' and 'platform-tools' directories are in the PATH variable. 
+
+Error: android: Command failed with exit code ENOENT
+

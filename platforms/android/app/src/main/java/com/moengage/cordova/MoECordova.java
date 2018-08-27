@@ -38,6 +38,7 @@ public class MoECordova extends CordovaPlugin {
   private static final String ACTION_ENABLE_DATA_REDIRECTION = "enableDataRedirection";
   private static final String ACTION_SET_USER_ATTRIBUTE_TIMESTAMP = "set_user_attribute_timestamp";
   private static final String ACTION_INIT = "init";
+  private static final String ACTION_SET_ALIAS = "setAlias";
 
   private static CallbackContext nativeCallbackContext;
   private static CordovaWebView cordovaWebView;
@@ -136,6 +137,9 @@ public class MoECordova extends CordovaPlugin {
           }
           cachedExtras.clear();
         }
+        break;
+      case ACTION_SET_ALIAS:
+        moeHelper.setAlias(jsonObject.getString("set_alias"));
         break;
       default:
         callbackContext.error("fail");

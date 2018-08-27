@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Jun 27 15:05:11 IST 2018
+#Thu Jun 28 22:35:28 IST 2018
 122.file=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/layout/notification_template_media.xml
 60.set=ANDROID_RESOURCE
 129.file=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable/common_google_signin_btn_icon_light.xml
@@ -135,7 +135,7 @@
 143.set=ANDROID_RESOURCE
 6.set=ANDROID_RESOURCE
 135.set=ANDROID_RESOURCE
-127.set=ANDROID_RESOURCE
+127.set=JAVA_RESOURCE
 135.base=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
 34.file=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable-xhdpi-v4/notification_bg_normal.9.png
 0.base=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
@@ -148,7 +148,7 @@
 98.base=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
 120.file=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable-mdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png
 40.set=ANDROID_RESOURCE
-127.file=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png
+127.file=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/transforms/mergeJavaRes/debug/0.jar/firebase-common.properties
 32.set=ANDROID_RESOURCE
 142.base=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
 51.base=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
@@ -167,14 +167,14 @@
 150.set=JAVA_RESOURCE
 104.base=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
 142.set=ANDROID_RESOURCE
-141.file=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable/common_google_signin_btn_icon_light_normal.xml
+141.file=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/transforms/mergeJavaRes/debug/0.jar/firebase-measurement-connector.properties
 151.base=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
 5.set=ANDROID_RESOURCE
 50.file=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png
 134.set=ANDROID_RESOURCE
 158.base=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
 57.file=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/color/common_google_signin_btn_text_light.xml
-126.set=JAVA_RESOURCE
+126.set=ANDROID_RESOURCE
 67.base=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
 118.set=ANDROID_RESOURCE
 111.base=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
@@ -201,11 +201,11 @@
 110.file=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/layout/notification_template_big_media_narrow_custom.xml
 120.base=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
 117.file=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/anim/slide_left_out.xml
-127.base=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
+127.base=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/transforms/mergeJavaRes/debug/0.jar
 26.file=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/transforms/mergeJavaRes/debug/0.jar/play-services-base.properties
 164.file=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/color/common_google_signin_btn_tint.xml
 73.file=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/assets/debug/www/cordova-js-src/plugin/android/app.js
-141.set=ANDROID_RESOURCE
+141.set=JAVA_RESOURCE
 4.set=ANDROID_RESOURCE
 133.set=ANDROID_RESOURCE
 125.set=ANDROID_RESOURCE
@@ -220,9 +220,9 @@
 87.file=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/layout-v21/notification_template_icon_group.xml
 97.base=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/assets/debug
 30.set=ANDROID_RESOURCE
-126.file=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/transforms/mergeJavaRes/debug/0.jar/firebase-common.properties
+126.file=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png
 22.set=ANDROID_RESOURCE
-141.base=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
+141.base=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/transforms/mergeJavaRes/debug/0.jar
 50.base=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
 14.set=JAVA_RESOURCE
 92.set=ANDROID_RESOURCE
@@ -236,10 +236,10 @@
 5.file=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/layout/activity_integration_verification.xml
 49.file=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable-hdpi-v4/googleg_standard_color_18.png
 96.file=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/assets/debug/www/cordova-js-src/android/nativeapiprovider.js
-140.set=JAVA_RESOURCE
+140.set=ANDROID_RESOURCE
 103.base=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
 3.set=ANDROID_RESOURCE
-140.file=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/transforms/mergeJavaRes/debug/0.jar/firebase-measurement-connector.properties
+140.file=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable/common_google_signin_btn_icon_light_normal.xml
 132.set=JAVA_RESOURCE
 150.base=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/transforms/mergeJavaRes/debug/0.jar
 124.set=ANDROID_RESOURCE
@@ -272,7 +272,7 @@
 59.set=ANDROID_RESOURCE
 87.base=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
 116.file=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png
-126.base=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/transforms/mergeJavaRes/debug/0.jar
+126.base=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
 25.file=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/resources.arsc
 163.file=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/layout-v16/notification_template_custom_big.xml
 2.set=ANDROID_RESOURCE
@@ -293,7 +293,7 @@
 20.set=ANDROID_RESOURCE
 125.file=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/AndroidManifest.xml
 12.set=ANDROID_RESOURCE
-140.base=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/transforms/mergeJavaRes/debug/0.jar
+140.base=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
 90.set=ANDROID_RESOURCE
 82.set=ANDROID_RESOURCE
 56.base=/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_

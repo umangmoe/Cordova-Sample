@@ -1,7 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <manifest android:hardwareAccelerated="true" android:versionCode="10000" android:versionName="1.0.0" package="com.moengage.cordova.sample" xmlns:android="http://schemas.android.com/apk/res/android">
     <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true" />
-    <uses-permission android:name="android.permission.INTERNET" />
     <application android:hardwareAccelerated="true" android:icon="@mipmap/icon" android:label="@string/app_name" android:name="SampleApplication" android:supportsRtl="true">
         <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale" android:label="@string/activity_name" android:launchMode="singleTop" android:name="MainActivity" android:theme="@android:style/Theme.DeviceDefault.NoActionBar" android:windowSoftInputMode="adjustResize">
             <intent-filter android:label="@string/launcher_name">
@@ -9,6 +8,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <provider android:authorities="${applicationId}.moengage.provider" android:exported="false" android:name="com.moe.pushlibrary.providers.MoEProvider" />
+        <receiver android:name="com.moe.pushlibrary.AppUpdateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <data android:path="${applicationId}" android:scheme="package" />
+            </intent-filter>
+        </receiver>
         <service android:name="com.moengage.firebase.MoEngaeFireBaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
@@ -19,13 +25,6 @@
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
-        <provider android:authorities="${applicationId}.moengage.provider" android:exported="false" android:name="com.moe.pushlibrary.providers.MoEProvider" />
-        <receiver android:name="com.moe.pushlibrary.AppUpdateReceiver">
-            <intent-filter>
-                <action android:name="android.intent.action.PACKAGE_REPLACED" />
-                <data android:path="${applicationId}" android:scheme="package" />
-            </intent-filter>
-        </receiver>
     </application>
     <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="26" />
 </manifest>

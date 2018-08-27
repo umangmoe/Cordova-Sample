@@ -30,6 +30,8 @@ var app = {
         this.receivedEvent('deviceready');
         var moe = new MoECordova.init();
         moe.trackEvent("testEvent", {"attr" : 1});
+        // moe.setUserAttribute("USER_ATTRIBUTE_UNIQUE_ID", 123);
+        moe.setAlias(1234);
     },
 
     // Update DOM on a Received Event

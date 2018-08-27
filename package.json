@@ -11,19 +11,19 @@
     "license": "Apache-2.0",
     "dependencies": {
         "cordova-android": "^7.0.0",
-        "cordova-moengage-fcm-dependency": "file:../MoECordova/push-fcm-android-dependency",
-        "cordova-moengage-fcm-listeners": "file:../MoECordova/push-fcm-android-listeners",
+        "cordova-moengage-fcm-dependency": "^1.0.0",
+        "cordova-moengage-fcm-listeners": "^1.0.0",
         "cordova-plugin-whitelist": "^1.3.3",
-        "moengagesdk": "file:../MoECordova/core"
+        "moengagesdk": "^4.0.0"
     },
     "cordova": {
         "plugins": {
             "cordova-plugin-whitelist": {},
-            "cordova-moengage-fcm-dependency": {},
-            "cordova-moengage-fcm-listeners": {},
             "cordova-plugin-moengage": {
-                "APP_ID": "DAO6UGZ73D9RTK8B5W96TPYN"
-            }
+                "APP_ID": "VAMFYV9TB2DQK96O1F96OB1Q"
+            },
+            "cordova-moengage-fcm-dependency": {},
+            "cordova-moengage-fcm-listeners": {}
         },
         "platforms": [
             "android"

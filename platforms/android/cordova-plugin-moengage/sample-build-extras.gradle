@@ -8,13 +8,6 @@ dependencies {
   }
 }
 
-configurations.all {
-    resolutionStrategy {
-        force 'com.android.support:appcompat-v7:26.0.1'
-
-    }
-}
-
 ext.postBuildExtras = {
     android {
         compileOptions {
