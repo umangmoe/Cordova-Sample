@@ -29,9 +29,64 @@ var app = {
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
         var moe = new MoECordova.init();
+        moe.setLogLevelForiOS(1);
         moe.trackEvent("testEvent", {"attr" : 1});
-        // moe.setUserAttribute("USER_ATTRIBUTE_UNIQUE_ID", 123);
-        moe.setAlias(1234);
+        moe.registerForPushNotification()
+
+        var eventDict1 = {
+            "attributeKey" : "attributeValue"
+        }
+        moe.trackEvent("Event1",eventDict1)
+
+
+        var eventDict2 = {
+            "attributeKeyBool" : true
+        }
+        moe.trackEvent("Event2",eventDict2)
+
+        
+        var eventDict3 = {
+            "attributeKeyNumber" : 2333
+        }
+        moe.trackEvent("Event3",eventDict3)
+
+        
+        var eventDict4 = {
+            "attributeKeyDecimal" : 2.34
+        }
+        moe.trackEvent("Event4",eventDict4)
+
+        moe.trackEvent("Event5",null)
+
+        moe.setExistingUser(true)
+
+        moe.setUserAttribute("USER_ATTRIBUTE_UNIQUE_ID", "ID1")
+        moe.setUserAttribute("TEST_NUMBER", 23)
+        moe.setUserAttribute("TEST_BOOL", true)
+        moe.setUserAttribute("TEST_STRING", "HELLO")
+
+        moe.setUserAttributeTimestamp("TEST_TIME",1470288682)
+        moe.setAlias("ID2")
+        moe.setUserAttributeLocation("TEST_LOCATION",72.0089,54.0009)
+
+        moe.showInApp()
+
+        moe.on('onPushClick', function(data) {
+            console.log('Received data: ' + data);
+        });
+
+        moe.on('onPushRegistration', function(data) {
+            console.log('Received data: ' + data);
+        });
+
+        moe.on('onInAppShown', function(data) {
+            console.log('Received data: ' + data);
+        });
+
+        moe.on('onInAppClick', function(data) {
+            console.log('Received data: ' + data);
+        });
+
     },
 
     // Update DOM on a Received Event
@@ -44,6 +99,7 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+        
     }
 };
 

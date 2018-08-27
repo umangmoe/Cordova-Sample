@@ -1,6 +1,21 @@
 {
     "logs": [
         {
+            "outputFile": "/Users/sonalrathi/moengageDev/cordova/Cordova-Sample/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rIN/values-en-rIN.xml",
+            "map": [
+                {
+                    "source": "/Users/sonalrathi/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/e99d4a42e2257ba8393f594cff5a7bba/res/values-en-rIN/values-en-rIN.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rIN/values-en-rIN.xml",
             "map": [
                 {
