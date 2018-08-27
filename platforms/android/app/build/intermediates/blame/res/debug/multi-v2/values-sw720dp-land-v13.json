@@ -1,6 +1,38 @@
 {
     "logs": [
         {
+            "outputFile": "/Users/sonalrathi/moengageDev/cordova/Cordova-Sample/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw720dp-land-v13/values-sw720dp-land-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/sonalrathi/.gradle/caches/transforms-1/files-1.1/moengagesdk-3.1.03.aar/82d348f45af6ce689f7fab0e8f3460e2/res/values-sw720dp-land-v13/values-sw720dp-land-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "49",
+                        "endOffsets": "100"
+                    },
+                    "to": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "129",
+                        "endColumns": "49",
+                        "endOffsets": "174"
+                    }
+                },
+                {
+                    "source": "/Users/sonalrathi/.gradle/caches/transforms-1/files-1.1/inapp-3.1.00.aar/ca429ab2772589bf573e18492c2b682a/res/values-sw720dp-land-v13/values-sw720dp-land-v13.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,91",
+                        "endColumns": "35,37",
+                        "endOffsets": "86,124"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "/Users/umang/Dev/cordova/moengage-demo/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw720dp-land-v13/values-sw720dp-land-v13.xml",
             "map": [
                 {

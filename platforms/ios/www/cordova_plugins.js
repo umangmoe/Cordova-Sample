@@ -13,7 +13,9 @@ module.exports.metadata =
 // TOP OF METADATA
 {
     "cordova-plugin-moengage": "3.0.0",
-    "cordova-plugin-whitelist": "1.3.3"
+    "cordova-plugin-whitelist": "1.3.3",
+    "cordova-moengage-fcm-dependency": "1.0.0",
+    "cordova-moengage-fcm-listeners": "1.0.0"
 };
 // BOTTOM OF METADATA
 });

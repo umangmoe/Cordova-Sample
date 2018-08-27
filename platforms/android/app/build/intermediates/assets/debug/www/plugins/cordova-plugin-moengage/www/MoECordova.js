@@ -320,6 +320,25 @@ MoECordova.prototype.setAlias = function (alias) {
 };
 
 
+/**
+ * Use this method to update User Attribute Unique ID of a user
+ * @param alias The updated Unique ID for the user 
+ */
+
+MoECordova.prototype.setAlias = function (alias) {
+  console.log("inside setAlias");
+  var success = function(result) {
+      console.log("setAlias : success");
+  };
+
+  var fail = function(msg) {
+      console.log("setAlias : fail");
+  };
+
+  exec(success, fail, 'MoEngage', 'setAlias', [{"set_alias" : alias}]);
+};
+
+
 MoECordova.prototype.emit = function() {
     var args = Array.prototype.slice.call(arguments);
     var eventName = args.shift();
